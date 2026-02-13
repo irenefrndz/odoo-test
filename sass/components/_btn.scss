@@ -1,0 +1,49 @@
+.btn{
+    font-size: 15px;
+    line-height: 1;
+    background-color: $primary-color;
+    padding: 14px  24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+    border-radius: 4px;
+    &__icon{
+        flex: 0 0 auto;
+    }
+    @include res-to(sm){
+        font-size: 14px;
+    }
+    &--sm{
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+    &--primary{
+        background-color: $primary-color;
+        color: $white;
+        &:hover{
+            background-color: #329efd;
+            color: $white;
+        }
+    }
+    &--white{
+        background-color: $white;
+        color: $dark-grey;
+        &:hover{
+            background-color: #ebebeb;
+            color: $dark-grey;
+        }
+    }
+    &--outline{
+        border: 1px solid #E7EDF3;
+        background-color: transparent;
+        color: $dark-grey;
+        &:hover{
+            border: 1px solid #E7EDF3;
+            background-color: #E7EDF3;
+            color: $dark-grey;
+        }
+    }
+
+}

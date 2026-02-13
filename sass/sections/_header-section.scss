@@ -1,0 +1,65 @@
+/* Header Section Start */ 
+.header{
+    &--absolute{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 111;
+    }
+    &__hambarger{
+        & button{
+            background-color: transparent;
+            font-size: 24px;
+            color: $white;
+            padding: 0;
+            border: none;
+            line-height: 1;
+        }
+    }
+}
+
+.navbar{
+    border-bottom: 1px solid #3A9CFF;
+    padding: 24px 0px;
+    justify-content: space-between;
+    align-items: center;
+     @include res-to(sm){
+        padding: 18px 0px;
+    }
+    &__logo{
+        max-width: 100px;
+        flex: 0 0 auto;
+        width: 100%;
+        @include res-to(sm){
+            max-width: 70px;
+        }
+        & img{
+            max-width: 100%;
+            width: 100%;    
+        }
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__actions{
+        display: flex;
+        align-items: center;
+    }
+    &__link{
+        color: $white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        padding: 10px 20px;
+        transition: all .3s ease;
+        font-size: 15px;
+        &:hover{
+            color: rgba($color: #fff, $alpha: 0.8);
+        }
+    }
+}

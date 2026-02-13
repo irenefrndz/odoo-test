@@ -1,0 +1,159 @@
+body {
+  font-family: $font-main;
+  font-size: $base-size;
+  line-height: 1.6;
+  color: $light-blue;
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+  color: $dark-blue;
+  font-weight: 600;
+  margin: 0px;
+}
+
+
+
+// Container
+.container{
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  @include res-to(xxl){
+
+  }
+  @include res-to(xl){
+    max-width: 1140px;
+  }
+  @include res-to(lg){
+        max-width: 920px;
+  }
+  @include res-to(md){
+        max-width: 720px;
+  }
+  @include res-to(sm){
+        max-width: 420px;
+  }
+}
+
+// Typo
+.text{
+  &-primary{
+    color: $primary-color !important;
+  }
+}
+
+// Common css
+.shapeEffect{
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 120px;
+  content: "";
+  clip-path: polygon(0 120px, 100% 0, 100% 100%, 0% 100%);
+  &--white{
+    background-color: #fff;
+  }
+  &--darkBlue{
+    background-color: #161348;
+  }
+  @include res-to(xxl){
+    height: 80px;
+    clip-path: polygon(0 80px, 100% 0, 100% 100%, 0% 100%);
+  }
+  @include res-to(md){
+    height: 50px;
+    clip-path: polygon(0 44px, 100% 0, 100% 100%, 0% 100%);
+  }
+  @include res-to(sm){
+    height: 30px;
+    clip-path: polygon(0 22px, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+}
+
+// badge
+.badge{
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 10px;
+  &.rounded-full{
+    border-radius: 30px;
+  }
+  &--primary{
+    background-color: $primary-color;
+    color: $white;
+  }
+  &--success{
+    background-color: $success-color;
+    color: $white;
+  }
+
+  &--yellow{
+    background-color: $warning-color;
+    color: white;
+  }
+}
+
+.link{
+    font-size: 14px;
+    color: $dark-grey;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    line-height: 1.8;
+    &:hover{
+      color: $primary-color;
+        &::after{
+            width: 0;
+        }
+    }
+    &::after{
+        position: absolute;
+        left: auto;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        content: "";
+        transition: all .3s ease;
+    }
+    &--primary{
+        color: $primary-color;
+        &:hover{
+            color: $primary-color;
+            text-decoration: none;
+        }
+        &::after{
+          border-top: 1px dashed $primary-color;
+        }
+    }
+    &--dark{
+      color: $dark-grey;
+      &:hover{
+        color: $primary-color !important;
+      }
+    }
+    &.undeline-none{
+      &::after{
+        display: none;
+      }
+    }
+    &-solid{
+      &::after{
+        border-top: 2px solid;
+      }
+    }
+}

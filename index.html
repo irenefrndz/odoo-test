@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Odoo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+    integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <!-- offcanvas-menu -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="ri-close-large-line"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+      <div class="offcanvas-menu">
+        <ul>
+          <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Products</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Pages</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">App</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Docs</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="#" class="navbar__link navbar__link--login">Sign in</a>
+        <button class="btn btn--white">
+          <span class="btn__icon">
+            <i class="ri-shopping-bag-3-line"></i>
+          </span> Buy now
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- header-section -->
+  <header class="header header--absolute">
+    <nav class=" container">
+      <div class="navbar">
+        <div class="navbar__logo">
+          <img src="imgs/odoo-white.svg" alt="Odoo Logo" class="navbar__logo-img">
+        </div>
+
+        <ul class="navbar__menu d-none d-lg-flex">
+          <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Products</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Pages</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">App</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Docs</a></li>
+        </ul>
+
+        <div class="navbar__actions d-none d-lg-flex">
+          <a href="#" class="navbar__link navbar__link--login">Sign in</a>
+          <button class="btn btn--white">
+            <span class="btn__icon">
+              <i class="ri-shopping-bag-3-line"></i>
+            </span> Buy now
+          </button>
+        </div>
+
+        <div class="header__hambarger d-lg-none">
+          <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+
+    <!-- Hero-section -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-5">
+            <div class="hero__content">
+              <h1 class="hero__title fs-1 text-white mb-2 mb-lg-3">Development <br> done right</h1>
+              <p class="hero__description mb-3 mb-lg-4">
+                Build a beautiful, modern website with flexible components built from scratch.
+              </p>
+              <div class="hero__actions mb-4 mb-lg-5">
+                <button class="btn btn--white">Get started <span class="btn__icon"><i
+                      class="ri-add-fill"></i></span></button>
+              </div>
+
+              <div class="hero__social-proof flex-wrap">
+                <span class="hero__social-label">Trusted by:</span>
+                <div class="hero__logos flex-wrap">
+                  <img src="imgs/google-white.svg" alt="Google" class="hero__client-logo">
+                  <img src="imgs/spotify-white.svg" alt="Spotify" class="hero__client-logo">
+                  <img src="imgs/airbnb-white.svg" alt="Airbnb" class="hero__client-logo">
+                  <img src="imgs/paypal-white.svg" alt="PayPal" class="hero__client-logo">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-7">
+            <div class="hero__visual">
+              <article class="card">
+                <div class="card__header mb-3 mb-lg-4">
+                  <h3 class="card__title fs-6 mb-0">Manage cards</h3>
+                  <button class="btn btn--sm btn--outline">Add new</button>
+                </div>
+
+                <div class="credit-card">
+                  <div class="credit-card__top">
+                    <div class="credit-card__chip">
+                      <img src="imgs/mastercard.svg" alt="mastercard">
+                    </div>
+                    <span class="badge badge--success">Active</span>
+                  </div>
+                  <div class="credit-card__number">
+                    <span class="credit-card__number-title text-white">Card Number</span>
+                    <h4 class="credit-card__number-main fs-5">4358 - 7421 - 9256 - 6682</h4>
+                  </div>
+                  <div class="credit-card__footer">
+                    <div class="credit-card__info">
+                      <span class="credit-card__label">NAME</span>
+                      <span class="credit-card__value">John Snow</span>
+                    </div>
+                    <div class="credit-card__info">
+                      <span class="credit-card__label">EXPIRY DATE</span>
+                      <span class="credit-card__value">11/23</span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="transactions mb-3">
+                  <li class="transactions__item">
+                    <div class="transactions__info">
+                      <span class="transactions__name">Starbucks</span>
+                      <span class="transactions__status">Pending - San Francisco, United States</span>
+                    </div>
+                    <span class="transactions__amount">$5.50 USD</span>
+                  </li>
+                  <li class="transactions__item">
+                    <div class="transactions__info">
+                      <span class="transactions__name">Nike Sports</span>
+                      <span class="transactions__status">Pending - Lisbon, Portugal</span>
+                    </div>
+                    <span class="transactions__amount">$129.00 USD</span>
+                  </li>
+                </ul>
+                <div class="d-block">
+                  <a href="#" class="link link--primary text-sm">View all <span><i
+                        class="ri-arrow-right-s-line"></i></span> </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div class="shapeEffect shapeEffect--white"></div>
+    </section>
+
+    <!-- features-section -->
+    <section class="features">
+      <div class="container">
+
+        <div class="features__item">
+          <div class="row align-items-center  flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 col-md-9">
+              <div class="features__visual position-relative">
+                <div class="features__image-stack">
+                  <div class="features__card-ui">
+                    <h3 class="fs-5 fw-medium mb-2 mb-lg-3">Awesome projects </h3>
+
+                    <div class="features__progress-card mb-3 mb-lg-5">
+                      <div class="features__progress-title d-flex align-items-center justify-content-between">
+                        <p>Create the new logo </p>
+                        <p>
+                          3:50
+                          <span class="icon">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </span>
+                        </p>
+                      </div>
+                      <div class="progress progress--warning" role="progressbar" aria-label="Basic example"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 75%"></div>
+                      </div>
+                    </div>
+
+                    <div class="features__progress-card mb-3 mb-lg-5">
+                      <div class="features__progress-title d-flex align-items-center justify-content-between">
+                        <p>Set up the color palette </p>
+                        <p>
+                          3:50
+                          <span class="icon">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </span>
+                        </p>
+                      </div>
+                      <div class="progress progress--warning" role="progressbar" aria-label="Basic example"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 75%"></div>
+                      </div>
+                    </div>
+
+                    <div class="features__progress-card mb-3 mb-lg-4">
+                      <div class="features__progress-title d-flex align-items-center justify-content-between">
+                        <p>Wireframe and prototype </p>
+                        <p>
+                          6:50
+                          <span class="icon">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </span>
+                        </p>
+                      </div>
+                      <div class="progress progress--warning" role="progressbar" aria-label="Basic example"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 75%"></div>
+                      </div>
+                    </div>
+
+
+                    <div class="features__video-overlay">
+                      <img src="imgs/img_01.jpg" alt="Team collaborating" class="features__main-img">
+                      <button class="btn btn--white btn--sm btn-play ">Play video <span class="icon"><i
+                            class="ri-play-line"></i></span></button>
+                    </div>
+
+                  </div>
+                </div>
+                <img src="imgs/dotted-right.png" class="dotted dotted-right d-none d-lg-block" alt="">
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-9 offset-lg-1">
+              <div class="features__content">
+                <span class="badge badge--yellow rounded-full mb-3 mb-lg-4">Tools</span>
+                <h2 class="features__title mb-3 mb-lg-4 fs-2 lh-base">We build for designers and developers</h2>
+                <p class="features__description">
+                  Get components and examples, including tons of variables that will help you grow your business.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="features__item">
+          <div class="row align-items-center flex-column-reverse flex-lg-row-reverse">
+            <div class="col-lg-6 col-md-9">
+              <div class="features__video-overlay position-relative">
+                <img src="imgs/img_02.jpg" alt="Team collaborating" class="features__main-img">
+                <button class="btn btn--white btn--sm btn-play">Play video <span class="icon"><i
+                      class="ri-play-line"></i></span></button>
+                <img src="imgs/dotted-left.png" class="dotted dotted-left d-none d-lg-block" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-9">
+              <div class="features__content">
+                <span class="badge badge--success rounded-full mb-3 mb-lg-4">Features</span>
+                <h2 class="features__title mb-3 mb-lg-4 fs-5 lh-lg">Get components and examples, including tons of
+                  variables
+                  that will help you grow your business</h2>
+                <ul class="features__lists features__lists--success">
+                  <li>
+                    <span class="icon">
+                      <i class="ri-checkbox-fill"></i>
+                    </span>
+                    Perfect for modern startups
+                  </li>
+                  <li>
+                    <span class="icon">
+                      <i class="ri-checkbox-fill"></i>
+                    </span>
+                    Fully customizable and scalable
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="features__item">
+          <div class="row align-items-center justify-content-center flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 col-md-9">
+              <div class="features__cards position-relative">
+                <div class="row align-items-center">
+                  <div class="col-6">
+                    <div class="features__left-cards">
+
+                      <!-- card-1 -->
+                      <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-2" style="max-width: 300px;">
+                        <div class="user-card__image-container">
+                          <img src="imgs/person_03.jpg" class="img-fluid w-100" alt="User Image">
+                        </div>
+                        <div class="card-body d-flex align-items-center justify-content-between py-3">
+                          <div class="d-flex align-items-center">
+                            <div
+                              class="user-card__avatar bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-2"
+                              style="width: 40px; height: 40px; font-weight: bold;">
+                              JH
+                            </div>
+                            <h6 class="user-card__name mb-0 fw-bold" style="font-size: 0.9rem;">Jimmy Hendrix</h6>
+                          </div>
+                          <button class="btn btn-link text-muted p-0">
+                            <i class="far fa-heart"></i> </button>
+                        </div>
+                      </div>
+                      <!-- card-1--end -->
+
+                      <!-- card-2 -->
+                      <div class="card border-0 shadow-sm rounded-4 p-3 mb-2" style="max-width: 300px;">
+                        <div class="d-flex align-items-center">
+                          <div
+                            class="stats-card__icon bg-success bg-opacity-50 text-white rounded-circle d-none align-items-center justify-content-center me-3 d-md-flex"
+                            style="width: 45px; height: 45px;">
+                            <i class="ri-check-fill"></i>
+                          </div>
+                          <div class="stats-card__content">
+                            <h6 class="mb-0 fw-bold text-dark">300+ components</h6>
+                            <small class="text-muted">Built to be customized.</small>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card-2--end -->
+
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="features__right-cards">
+                      <!-- card-3 -->
+                      <div class="card border-0 shadow-sm rounded-4 py-xxl-5 py-4 px-4 mb-2 text-center"
+                        style="max-width: 250px;">
+                        <div class="review-card__logo mb-3">
+                          <img src="imgs/airbnb.svg" alt="Airbnb" style="height: 30px;">
+                        </div>
+                        <div class="review-card__stars text-warning mb-2 mb-lg-4" style="font-size: 0.8rem;">
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <span class="">
+                            <i class="ri-star-line"></i>
+                          </span>
+                        </div>
+                        <h6 class="review-card__score fw-bold mb-2 mb-lg-3">4.95 out of 5 stars</h6>
+                        <small class="text-muted">from 23 reviews</small>
+                      </div>
+                      <!-- card-3-end -->
+
+                      <!-- card-4 -->
+                      <div class="card border-0 shadow-sm rounded-4 py-4 py-xl-5 px-4 text-center"
+                        style="max-width: 250px;">
+                        <div
+                          class="project-card__logo mx-auto mb-3 bg-dark text-white rounded-circle d-flex align-items-center justify-content-center overflow-hidden"
+                          style="width: 60px; height: 60px;">
+                          <img src="imgs/company_01.png" alt="">
+                        </div>
+                        <h6 class="fw-semibold mb-3 mb-lg-4">Website UI Kit</h6>
+
+                        <div class="project-card__avatars d-flex justify-content-center mb-4">
+                          <img src="imgs/person_01.jpg" class="rounded-circle border border-2 border-white"
+                            style="width: 30px; margin-right: -10px;">
+                          <img src="imgs/person_02.jpg" class="rounded-circle border border-2 border-white"
+                            style="width: 30px; margin-right: -10px;">
+                          <img src="imgs/person_03.jpg" class="rounded-circle border border-2 border-white"
+                            style="width: 30px;">
+                        </div>
+
+                        <div class="project-card__actions d-flex justify-content-center gap-3 text-muted">
+
+                          <a href=""><i class="ri-attachment-line"></i></a>
+                          <a href=""> <i class="ri-eye-line"></i></a>
+                          <a href=""><i class="ri-heart-line"></i></a>
+
+
+                        </div>
+                      </div>
+                      <!-- card-4-end -->
+                    </div>
+                  </div>
+                </div>
+                <img src="imgs/dotted-right.png" class="dotted dotted-right d-none d-lg-block" alt="">
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-9 offset-lg-1">
+              <div class="features__content mw-100">
+                <span class="badge badge--primary rounded-full mb-3 mb-lg-4">Technology </span>
+                <h2 class="features__title mb-3 mb-lg-4 fs-2 lh-base">We use the latest <br> technologies on the market
+                </h2>
+                <p class="features__description mb-3 mb-lg-4">
+                  Get components and examples, including tons of <br> variables that will help you grow your business.
+                </p>
+                <a href="" class="link link--primary link-solid">See case studies</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="features__item">
+          <div class="row align-items-center  flex-column-reverse flex-lg-row-reverse">
+            <div class="col-lg-6 col-md-9 ">
+
+              <div class="features__video-overlay position-relative">
+                <img src="imgs/img_03.jpg" alt="Team collaborating" class="features__main-img">
+                <button class="btn btn--white btn--sm btn-play">Play video <span class="icon"><i
+                      class="ri-play-line"></i></span></button>
+                <img src="imgs/dotted-left.png" class="dotted dotted-left d-none d-lg-block" alt="">
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-9 offset-lg-1">
+              <div class="features__content mw-100">
+                <span class="badge badge--yellow rounded-full mb-3 mb-lg-4">Easy to install</span>
+                <h2 class="features__title mb-3 mb-lg-4 fs-2 lh-base">Download, install and run. </h2>
+                <p class="features__description mb-4 mb-lg-5 lh-base">
+                  Get components and examples, including tons of variables that will help you grow your business.
+                </p>
+                <div class="d-flex align-items-center gap-3 features__downloads">
+                  <a href=""><img src="imgs/app-store.png" alt="app-store"></a>
+                  <a href=""><img src="imgs/google-play.png" alt="google-play-store"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- feature-block -->
+        <div class="features__blockText">
+          <div class="features__blockText-content">
+            <h4 class="fs-4 text-white mb-3 fw-medium">Infinite solutions </h4>
+            <p>
+              Intuitive markup, powerful and lightning-fast build tools, <br> everything you need to turn your ideas
+              into incredible products.
+            </p>
+          </div>
+          <a href="" class="btn btn--white">
+            Learn more
+            <span class="btn__icon">
+              <i class="ri-arrow-right-line"></i>
+            </span>
+          </a>
+        </div>
+        <!-- feature-block--end -->
+
+      </div>
+    </section>
+
+    <!-- Awards-section -->
+    <section class="award">
+      <div class="container">
+
+        <header class="award__header mb-4 mb-md-5">
+          <span class="badge badge--primary rounded-full mb-3 mb-lg-4">Awards</span>
+          <h2 class="award__title fs-5">Awards for design, creativity and innovation on the Internet</h2>
+        </header>
+
+        <div class="swiper award__slider overflow-visible">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide ">
+              <a href="" class="card shadow-sm rounded-4 py-xxl-5 py-4 px-4 mb-2 text-center award-card mt-md-5">
+                <div class="review-card__logo ">
+                  <img src="imgs/airbnb.svg" alt="Airbnb" class="award-card__logo">
+                </div>
+                <div class="review-card__stars text-warning mb-2 mb-lg-4" style="font-size: 0.8rem;">
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <span class="">
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <h6 class="review-card__score fw-bold mb-2 mb-lg-3">4.95 out of 5 stars</h6>
+                <small class="text-muted">from 23 reviews</small>
+              </a>
+            </div>
+
+            <article class="swiper-slide">
+              <a href="" class="card  shadow-sm rounded-4 py-xxl-5 py-4 px-4 mb-2 text-center award-card">
+                <div class="d-block">
+                  <img src="imgs/amazon.svg" alt="Amazon" class="award-card__logo">
+                </div>
+                <p class="award-card__description">They build modern looking websites easily using Tabs.</p>
+                <div class="text-center">
+                  <span class="award-card__link">Learn more</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="swiper-slide ">
+              <a href="" class="card shadow-sm rounded-4 py-xxl-5 py-4 px-4 mb-2 text-center award-card mt-md-5">
+                <div class="d-block">
+                  <img src="imgs/slack.svg" alt="Slack" class="award-card__logo">
+                </div>
+                <p class="award-card__description">They build modern looking websites easily using Trello.</p>
+                <div class="text-center">
+                  <span class="award-card__link">Learn more</span>
+                </div>
+              </a>
+            </article>
+
+            <div class="swiper-slide ">
+              <a href="" class="card  shadow-sm rounded-4 py-xxl-5 py-4 px-4 mb-2 text-center award-card">
+                <div class="review-card__logo mb-3">
+                  <img src="imgs/spotify.svg" alt="Spotify" class="award-card__logo">
+                </div>
+                <div class="review-card__stars text-warning mb-2 mb-lg-4" style="font-size: 0.8rem;">
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <span class="">
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <h6 class="review-card__score fw-bold mb-2 mb-lg-3">4.95 out of 5 stars</h6>
+                <small class="text-muted">from 23 reviews</small>
+              </a>
+            </div>
+
+            <article class="swiper-slide">
+              <a href="" class="card shadow-sm rounded-4 py-xxl-5 py-4 px-4 mb-2 text-center award-card mt-md-5">
+                <div class="d-block">
+                  <img src="imgs/paypal.svg" alt="PayPal" class="award-card__logo">
+                </div>
+                <p class="award-card__description">They build modern looking websites easily using Docker.</p>
+                <div class="text-center">
+                  <span class="award-card__link">Learn more</span>
+                </div>
+              </a>
+            </article>
+
+            <div class="swiper-slide ">
+              <a href="" class="card shadow-sm rounded-4 py-xxl-5 py-4 px-4 mb-2 text-center award-card mt-md-5">
+                <div class="review-card__logo ">
+                  <img src="imgs/airbnb.svg" alt="Airbnb" class="award-card__logo">
+                </div>
+                <div class="review-card__stars text-warning mb-2 mb-lg-4" style="font-size: 0.8rem;">
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <span class="">
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <h6 class="review-card__score fw-bold mb-2 mb-lg-3">4.95 out of 5 stars</h6>
+                <small class="text-muted">from 23 reviews</small>
+              </a>
+            </div>
+
+            <article class="swiper-slide">
+              <a href="" class="card shadow-sm rounded-4 py-xxl-5 py-4 px-4 mb-2 text-center award-card">
+                <div class="d-block">
+                  <img src="imgs/amazon.svg" alt="Amazon" class="award-card__logo">
+                </div>
+                <p class="award-card__description">They build modern looking websites easily using Tabs.</p>
+                <div class="text-center">
+                  <span class="award-card__link">Learn more</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="swiper-slide ">
+              <a href="" class="card shadow-sm rounded-4 py-xxl-5 py-4 px-4 mb-2 text-center award-card mt-md-5">
+                <div class="d-block">
+                  <img src="imgs/slack.svg" alt="Slack" class="award-card__logo">
+                </div>
+                <p class="award-card__description">They build modern looking websites easily using Trello.</p>
+                <div class="text-center">
+                  <span class="award-card__link">Learn more</span>
+                </div>
+              </a>
+            </article>
+
+            <div class="swiper-slide ">
+              <a href="" class="card shadow-sm rounded-4 py-xxl-5 py-4 px-4 mb-2 text-center award-card">
+                <div class="review-card__logo mb-3">
+                  <img src="imgs/spotify.svg" alt="Spotify" class="award-card__logo">
+                </div>
+                <div class="review-card__stars text-warning mb-2 mb-lg-4" style="font-size: 0.8rem;">
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <span class="">
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <h6 class="review-card__score fw-bold mb-2 mb-lg-3">4.95 out of 5 stars</h6>
+                <small class="text-muted">from 23 reviews</small>
+              </a>
+            </div>
+
+            <article class="swiper-slide">
+              <a href="" class="card shadow-sm rounded-4 py-xxl-5 py-4 px-4 mb-2 text-center award-card mt-md-5">
+                <div class="d-block">
+                  <img src="imgs/paypal.svg" alt="PayPal" class="award-card__logo">
+                </div>
+                <p class="award-card__description">They build modern looking websites easily using Docker.</p>
+                <div class="text-center">
+                  <span class="award-card__link">Learn more</span>
+                </div>
+              </a>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="shapeEffect shapeEffect--white"></div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="faq__title text-center">
+              <h2 class="fs-2 fw-semibold mb-2">Helpful answers </h2>
+              <p>
+                Start building fast, beautiful, and modern-looking websites in no time.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row faq__row">
+          <div class="col-lg-6">
+            <div class="accordion faq-accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <span>
+                      <i class="ri-file-line"></i>
+                    </span>
+                    Which license do I need?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquid ullam deserunt? Libero illo
+                      sit nesciunt sed. Quibusdam, eligendi dolorem!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <span>
+                      <i class="ri-lock-line"></i>
+                    </span>
+                    How do I get access to my database?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquid ullam deserunt? Libero illo
+                      sit nesciunt sed. Quibusdam, eligendi dolorem!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <span>
+                      <i class="ri-folder-line"></i>
+                    </span>
+                    How do I see previous orders?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquid ullam deserunt? Libero illo
+                      sit nesciunt sed. Quibusdam, eligendi dolorem!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="accordion faq-accordion" id="accordionExampleTwo">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <span>
+                      <i class="ri-file-line"></i>
+                    </span>
+                    Which license do I need?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquid ullam deserunt? Libero illo
+                      sit nesciunt sed. Quibusdam, eligendi dolorem!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <span>
+                      <i class="ri-lock-line"></i>
+                    </span>
+                    How do I get access to my database?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquid ullam deserunt? Libero illo
+                      sit nesciunt sed. Quibusdam, eligendi dolorem!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <span>
+                      <i class="ri-folder-line"></i>
+                    </span>
+                    How do I see previous orders?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquid ullam deserunt? Libero illo
+                      sit nesciunt sed. Quibusdam, eligendi dolorem!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="faq__bottom">
+          <div class="faq__bottom-contnet">
+            <h4 class="fs-6 text-center mb-2 mb-lg-3">I want to start a new project. </h4>
+            <div class="d-flex align-items-center justify-content-center gap-2 gap-lg-4">
+              <a href="" class="btn btn--primary">
+                Buy now
+                <span class="btn__icon">
+                  <i class="ri-arrow-right-line"></i>
+                </span>
+              </a>
+              <a href="" class="link link--dark">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shapeEffect shapeEffect--darkBlue"></div>
+    </section>
+
+
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__cta">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="footer__cta-content mb-3 mb-md-0">
+              <h2 class="footer__cta-title text-white fs-4 fw-medium mb-3">Brilliant solutions for your ideas</h2>
+              <p class="footer__cta-text text-white mb-0">Modern looking websites.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="footer__cta-actions d-flex flex-wrap align-items-center justify-content-lg-end justify-content-start gap-2 gap-lg-4">
+              <a href="#" class="btn btn--white">
+                <span class="btn__icon text-primary">
+                  <i class="ri-book-line"></i>
+                </span> Documentation
+              </a>
+              <a href="#" class="btn btn--primary">Purchase now</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__main">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="footer__brand">
+              <img src="imgs/odoo-white.svg" alt="Odoo" class="footer__logo">
+              <p class="footer__tagline">
+                Odoo attempts to bring the best development experience to designers and developers by offering the tools
+                needed for having a quick and solid start in most web projects.
+              </p>
+              <div class="footer__socials d-flex align-items-center gap-2 gap-lg-4">
+                <a href="#" class="footer__social-link"><i class="ri-dribbble-line"></i></a>
+                <a href="#" class="footer__social-link"><i class="ri-github-line"></i></a>
+                <a href="#" class="footer__social-link"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="footer__social-link"><i class="ri-facebook-circle-fill"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+
+              <div class="col-6 col-md-4">
+                <div class="footer__widget">
+                  <h4 class="footer__widget-title">Account</h4>
+                  <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Profile</a></li>
+                    <li><a href="#" class="footer__link">Settings</a></li>
+                    <li><a href="#" class="footer__link">Billing</a></li>
+                    <li><a href="#" class="footer__link">Notifications</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4">
+                <div class="footer__column">
+                  <h4 class="footer__widget-title">About</h4>
+                  <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Services</a></li>
+                    <li><a href="#" class="footer__link">Pricing</a></li>
+                    <li><a href="#" class="footer__link">Contact</a></li>
+                    <li><a href="#" class="footer__link">Careers</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4">
+                <div class="footer__column">
+                  <h4 class="footer__widget-title">Company</h4>
+                  <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Community</a></li>
+                    <li><a href="#" class="footer__link">Help center</a></li>
+                    <li><a href="#" class="footer__link">Support</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__legal d-flex align-items-center justify-content-center justify-content-md-between">
+        <p class="footer__copy mb-1">&copy; <strong class="text-white fw-semibold">Odoo.</strong> All rights reserved
+        </p>
+        <div class="footer__legal-links">
+          <a href="#" class="footer__legal-link">Terms</a>
+          <a href="#" class="footer__legal-link">Privacy</a>
+          <a href="#" class="footer__legal-link">Cookies</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

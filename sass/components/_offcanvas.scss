@@ -1,0 +1,32 @@
+/* Offcanvas Menu */    
+.offcanvas{
+    background: rgba(255, 255, 255, 0.39);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.1px);
+    -webkit-backdrop-filter: blur(14.1px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    &-header{
+        & .btn-close{
+            color: #fff;
+            opacity: 1;
+            font-size: 24px;
+            background-image: none;
+        }
+    }  
+    &-menu{
+        width: 100%;
+        & .navbar{
+            &__item{
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid #ffffff38;
+            }
+            &__link{
+                display: block;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+
+}

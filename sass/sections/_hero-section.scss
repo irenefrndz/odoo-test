@@ -1,0 +1,158 @@
+/* Hero Section Start */ 
+.hero{
+    background-color: $primary-color;
+    position: relative;
+    padding: 120px 0px;
+    min-height: 100vh;
+    padding: 200px 0px 100px;
+    @include res-to(md){
+        padding: 150px 0px 120px;
+    }
+    @include res-to(sm){
+        padding: 100px 0px 60px;
+    }
+    &__social{
+        &-proof{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            @include res-to(sm){
+                gap: 12px;
+            }
+        }
+        &-label{
+            color: $white;
+            font-size: 16px;
+        }
+    }
+    &__logos{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-grow: 1;
+        & img{
+            max-width: 80px;
+            width: 100%;
+        }
+    }
+    &__visual{
+        border-radius: 10px;
+        border-bottom-right-radius: 60px;
+        background-color: $white;
+        max-width: 420px;
+        margin: 0 0 0 auto;
+        padding: 20px 28px 30px;
+        @include res-to(md){
+            padding: 18px 16px 27px;
+            max-width: 360px;
+        }
+        & .card{
+            border: none;
+            background-color: transparent;
+            &__header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &__title{}
+
+        }
+    }
+
+    &__title{
+        line-height: 1.6;
+        @include res-to(md){
+            line-height: 1.4;
+        }
+    }
+    &__content{
+        @include res-to(sm){
+            margin-bottom: 30px;
+        }
+    }
+    &__description{
+        max-width: 360px;
+        line-height: 1.8;
+        color: #AED5FE ;
+    }
+}
+
+.credit-card{
+    background-color: #1C1348;
+    border-radius: 16px;
+    padding: 20px 24px 30px;
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 14px;
+    }
+    &__chip{
+        & img{
+            max-width: 50px;
+        }
+    }
+    &__number{
+        margin-bottom: 24px;
+        &-title{
+            font-size: 10px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            display: block;
+        }
+        &-main{
+            color: $white;
+        }
+    }
+    &__footer{
+        display: flex;
+        align-items: center;
+
+    }
+    &__info{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    &__label{
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-bottom: 3px;
+        display: block;
+        color: $white;
+    }
+    &__value{
+        font-size: 12px;
+        display: block;
+        color: $white;
+    }
+}
+
+.transactions{
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 14px 0px;
+        border-bottom: 1px solid #F5F7FA;
+    }
+    &__name{
+        font-size: 16px;
+        color: $dark-blue;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 2px;
+    }
+    &__status{
+        font-size: 14px;
+        color: $dark-grey;
+    }
+    &__amount{
+        font-size: 16px;
+        color: $dark-blue;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 2px;
+        flex: 0 0 auto;
+    }
+}
+
